@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "morefood:pufferfish_pieces"
+    },
+    {
+      "item": "minecraft:pufferfish"
+    }
+  ],
+  "result": {
+    "item": "morefood:pufferfish_soup"
+  }
+}
