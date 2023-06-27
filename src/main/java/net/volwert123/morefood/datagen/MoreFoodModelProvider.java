@@ -23,17 +23,27 @@ public class MoreFoodModelProvider extends FabricModelProvider {
         itemModelGenerator.register(MoreFoodItems.COOKED_CARROT, Models.GENERATED);
         itemModelGenerator.register(MoreFoodItems.CARROT_PIECES, Models.GENERATED);
         itemModelGenerator.register(MoreFoodItems.CARROT_SOUP, Models.GENERATED);
+        itemModelGenerator.register(MoreFoodItems.CARROT_BREAD, Models.GENERATED);
+        itemModelGenerator.register(MoreFoodItems.CARROT_PIE, Models.GENERATED);
         itemModelGenerator.register(MoreFoodItems.COOKED_APPLE, Models.GENERATED);
         itemModelGenerator.register(MoreFoodItems.APPLE_PIECES, Models.GENERATED);
         itemModelGenerator.register(MoreFoodItems.APPLE_SOUP, Models.GENERATED);
+        itemModelGenerator.register(MoreFoodItems.APPLE_BREAD, Models.GENERATED);
+        itemModelGenerator.register(MoreFoodItems.APPLE_PIE, Models.GENERATED);
         itemModelGenerator.register(MoreFoodItems.KELP_PIECES, Models.GENERATED);
         itemModelGenerator.register(MoreFoodItems.KELP_SOUP, Models.GENERATED);
         itemModelGenerator.register(MoreFoodItems.POTATO_PIECES, Models.GENERATED);
         itemModelGenerator.register(MoreFoodItems.POTATO_SOUP, Models.GENERATED);
+        itemModelGenerator.register(MoreFoodItems.POTATO_BREAD, Models.GENERATED);
+        itemModelGenerator.register(MoreFoodItems.COOKED_PHANTOM, Models.GENERATED);
         itemModelGenerator.register(MoreFoodItems.PHANTOM_PIECES, Models.GENERATED);
         itemModelGenerator.register(MoreFoodItems.PHANTOM_SOUP, Models.GENERATED);
         itemModelGenerator.register(MoreFoodItems.PUFFERFISH_PIECES, Models.GENERATED);
         itemModelGenerator.register(MoreFoodItems.PUFFERFISH_SOUP, Models.GENERATED);
         itemModelGenerator.register(MoreFoodItems.PUMPKING_SOUP, Models.GENERATED);
+        itemModelGenerator.register(MoreFoodItems.PUMPKING_BREAD, Models.GENERATED);
+        itemModelGenerator.register(MoreFoodItems.COOKED_BAMBOO, Models.GENERATED);
+        itemModelGenerator.register(MoreFoodItems.BAMBOO_PIECES, Models.GENERATED);
+        itemModelGenerator.register(MoreFoodItems.BAMBOO_SOUP, Models.GENERATED);
     }
 }

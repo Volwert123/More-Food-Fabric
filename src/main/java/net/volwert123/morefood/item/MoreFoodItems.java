@@ -52,9 +52,18 @@ public class MoreFoodItems {
                 }
             });
 
+    public static final Item CARROT_BREAD = registerItem("carrot_bread",
+            new Item(new FabricItemSettings().maxCount(64).rarity(Rarity.COMMON)
+                    .food(new FoodComponent.Builder().hunger(6).saturationModifier(3f).build())));
+
+
     public static final Item COOKED_APPLE = registerItem("cooked_apple",
             new Item(new FabricItemSettings().maxCount(64).rarity(Rarity.COMMON)
                     .food(new FoodComponent.Builder().hunger(5).saturationModifier(2.5f).build())));
+
+    public static final Item CARROT_PIE = registerItem("carrot_pie",
+            new Item(new FabricItemSettings().maxCount(64).rarity(Rarity.COMMON)
+                    .food(new FoodComponent.Builder().hunger(10).saturationModifier(5f).build())));
 
     public static final Item APPLE_PIECES = registerItem("apple_pieces",
             new Item(new FabricItemSettings().maxCount(64).rarity(Rarity.COMMON)));
@@ -82,6 +91,14 @@ public class MoreFoodItems {
                     return super.finishUsing(stack, world, user);
                 }
             });
+
+    public static final Item APPLE_BREAD = registerItem("apple_bread",
+            new Item(new FabricItemSettings().maxCount(64).rarity(Rarity.COMMON)
+                    .food(new FoodComponent.Builder().hunger(6).saturationModifier(3f).build())));
+
+    public static final Item APPLE_PIE = registerItem("apple_pie",
+            new Item(new FabricItemSettings().maxCount(64).rarity(Rarity.COMMON)
+                    .food(new FoodComponent.Builder().hunger(10).saturationModifier(5f).build())));
 
     public static final Item KELP_PIECES = registerItem("kelp_pieces",
             new Item(new FabricItemSettings().maxCount(64).rarity(Rarity.COMMON)));
@@ -137,6 +154,16 @@ public class MoreFoodItems {
                     return super.finishUsing(stack, world, user);
                 }
             });
+
+    public static final Item POTATO_BREAD = registerItem("potato_bread",
+            new Item(new FabricItemSettings().maxCount(64).rarity(Rarity.COMMON)
+                    .food(new FoodComponent.Builder().hunger(6).saturationModifier(3f).build())));
+
+
+    public static final Item COOKED_PHANTOM = registerItem("cooked_phantom",
+            new Item(new FabricItemSettings().maxCount(64).rarity(Rarity.COMMON)
+                    .food(new FoodComponent.Builder().hunger(5).saturationModifier(2.5f).build())));
+
 
     public static final Item PHANTOM_PIECES = registerItem("phantom_pieces",
             new Item(new FabricItemSettings().maxCount(64).rarity(Rarity.COMMON)));
@@ -217,6 +244,42 @@ public class MoreFoodItems {
                     return super.finishUsing(stack, world, user);
                 }
             });
+
+    public static final Item PUMPKING_BREAD = registerItem("pumpking_bread",
+            new Item(new FabricItemSettings().maxCount(64).rarity(Rarity.COMMON)
+                    .food(new FoodComponent.Builder().hunger(6).saturationModifier(3f).build())));
+
+    public static final Item COOKED_BAMBOO = registerItem("cooked_bamboo",
+            new Item(new FabricItemSettings().maxCount(64).rarity(Rarity.COMMON)
+                    .food(new FoodComponent.Builder().hunger(5).saturationModifier(2.5f).build())));
+
+    public static final Item BAMBOO_PIECES = registerItem("bamboo_pieces",
+            new Item(new FabricItemSettings().maxCount(64).rarity(Rarity.COMMON)));
+
+    public static final Item BAMBOO_SOUP = registerItem("bamboo_soup",
+            new Item(new FabricItemSettings().maxCount(64).rarity(Rarity.COMMON)
+                    .food(new FoodComponent.Builder().hunger(6).saturationModifier(3f).build())) {
+                @Override
+                public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
+                    PlayerEntity player = user instanceof PlayerEntity ? (PlayerEntity) user : null;
+                    if (player instanceof ServerPlayerEntity) {
+                        Criteria.CONSUME_ITEM.trigger((ServerPlayerEntity) player, stack);
+                    }
+                    if (player != null){
+                        player.incrementStat(Stats.USED.getOrCreateStat(this));
+                    }
+                    if (player == null || !player.getAbilities().creativeMode){
+                        if (stack.isEmpty()){
+                            return new ItemStack(Items.BOWL);
+                        }
+                        if (player != null){
+                            player.getInventory().insertStack(new ItemStack(Items.BOWL));
+                        }
+                    }
+                    return super.finishUsing(stack, world, user);
+                }
+            });
+
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(MoreFood.MOD_ID, name), item);
     }
@@ -224,4 +287,5 @@ public class MoreFoodItems {
     public static void registerMoreFoodItems() {
         MoreFood.LOGGER.info("Registering MoreFoodItems for " + MoreFood.MOD_ID);
     }
-}
+    }
+

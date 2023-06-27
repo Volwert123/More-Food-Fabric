@@ -50,6 +50,24 @@ public class MoreFoodRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.CARROT), conditionsFromItem(Items.CARROT))
                 .offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.CARROT_SOUP)));
 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, MoreFoodItems.CARROT_BREAD)
+                .input(Items.WHEAT)
+                .input(Items.CARROT)
+                .input(MoreFoodItems.CARROT_PIECES)
+                .criterion(hasItem(Items.WHEAT), conditionsFromItem(Items.WHEAT))
+                .criterion(hasItem(Items.CARROT), conditionsFromItem(Items.CARROT))
+                .criterion(hasItem(MoreFoodItems.CARROT_PIECES), conditionsFromItem(MoreFoodItems.CARROT_PIECES))
+                .offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.CARROT_BREAD)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, MoreFoodItems.CARROT_PIE)
+                .input(Items.CARROT)
+                .input(Items.EGG)
+                .input(Items.SUGAR)
+                .criterion(hasItem(Items.CARROT), conditionsFromItem(Items.CARROT))
+                .criterion(hasItem(Items.EGG), conditionsFromItem(Items.EGG))
+                .criterion(hasItem(Items.SUGAR), conditionsFromItem(Items.SUGAR))
+                .offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.CARROT_PIE)));
+
         CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.APPLE), RecipeCategory.FOOD, MoreFoodItems.COOKED_APPLE, 1.0f, 200)
                 .criterion(hasItem(Items.APPLE), conditionsFromItem(Items.APPLE))
                 .offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.COOKED_APPLE) + "_smelting"));
@@ -75,6 +93,24 @@ public class MoreFoodRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(MoreFoodItems.APPLE_PIECES), conditionsFromItem(MoreFoodItems.APPLE_PIECES))
                 .criterion(hasItem(Items.APPLE), conditionsFromItem(Items.APPLE))
                 .offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.APPLE_SOUP)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, MoreFoodItems.APPLE_BREAD)
+                .input(Items.WHEAT)
+                .input(Items.APPLE)
+                .input(MoreFoodItems.APPLE_PIECES)
+                .criterion(hasItem(Items.WHEAT), conditionsFromItem(Items.WHEAT))
+                .criterion(hasItem(Items.APPLE), conditionsFromItem(Items.APPLE))
+                .criterion(hasItem(MoreFoodItems.APPLE_PIECES), conditionsFromItem(MoreFoodItems.APPLE_PIECES))
+                .offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.APPLE_BREAD)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, MoreFoodItems.APPLE_PIE)
+                .input(Items.APPLE)
+                .input(Items.EGG)
+                .input(Items.SUGAR)
+                .criterion(hasItem(Items.APPLE), conditionsFromItem(Items.APPLE))
+                .criterion(hasItem(Items.EGG), conditionsFromItem(Items.EGG))
+                .criterion(hasItem(Items.SUGAR), conditionsFromItem(Items.SUGAR))
+                .offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.APPLE_PIE)));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, MoreFoodItems.KELP_PIECES, 4)
                 .input(Items.KELP)
@@ -103,6 +139,28 @@ public class MoreFoodRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(MoreFoodItems.POTATO_PIECES), conditionsFromItem(MoreFoodItems.POTATO_PIECES))
                 .criterion(hasItem(Items.POTATO), conditionsFromItem(Items.POTATO))
                 .offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.POTATO_SOUP)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, MoreFoodItems.POTATO_BREAD)
+                .input(Items.WHEAT)
+                .input(Items.POTATO)
+                .input(MoreFoodItems.POTATO_PIECES)
+                .criterion(hasItem(Items.WHEAT), conditionsFromItem(Items.WHEAT))
+                .criterion(hasItem(Items.POTATO), conditionsFromItem(Items.POTATO))
+                .criterion(hasItem(MoreFoodItems.POTATO_PIECES), conditionsFromItem(MoreFoodItems.POTATO_PIECES))
+                .offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.POTATO_BREAD)));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.PHANTOM_MEMBRANE), RecipeCategory.FOOD, MoreFoodItems.COOKED_PHANTOM, 1.0f, 200)
+                .criterion(hasItem(Items.PHANTOM_MEMBRANE), conditionsFromItem(Items.PHANTOM_MEMBRANE))
+                .offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.COOKED_PHANTOM) + "_smelting"));
+
+        CookingRecipeJsonBuilder.createSmoking(Ingredient.ofItems(Items.PHANTOM_MEMBRANE), RecipeCategory.FOOD, MoreFoodItems.COOKED_PHANTOM, 1.0f, 100)
+                .criterion(hasItem(Items.PHANTOM_MEMBRANE), conditionsFromItem(Items.PHANTOM_MEMBRANE))
+                .offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.COOKED_PHANTOM) + "_smoking"));
+
+        CookingRecipeJsonBuilder.createCampfireCooking(Ingredient.ofItems(Items.PHANTOM_MEMBRANE), RecipeCategory.FOOD, MoreFoodItems.COOKED_PHANTOM, 1.0f, 600)
+                .criterion(hasItem(Items.PHANTOM_MEMBRANE), conditionsFromItem(Items.PHANTOM_MEMBRANE))
+                .offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.COOKED_PHANTOM) + "_campfire_cooking"));
+
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, MoreFoodItems.PHANTOM_PIECES, 4)
                 .input(Items.PHANTOM_MEMBRANE)
@@ -140,6 +198,41 @@ public class MoreFoodRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.PUMPKIN_SEEDS), conditionsFromItem(Items.PUMPKIN_SEEDS))
                 .criterion(hasItem(Items.PUMPKIN), conditionsFromItem(Items.PUMPKIN))
                 .offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.PUMPKING_SOUP)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, MoreFoodItems.PUMPKING_BREAD)
+                .input(Items.WHEAT)
+                .input(Items.PUMPKIN)
+                .input(Items.PUMPKIN_SEEDS)
+                .criterion(hasItem(Items.WHEAT), conditionsFromItem(Items.WHEAT))
+                .criterion(hasItem(Items.PUMPKIN), conditionsFromItem(Items.PUMPKIN))
+                .criterion(hasItem(Items.PUMPKIN_SEEDS), conditionsFromItem(Items.PUMPKIN_SEEDS))
+                .offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.PUMPKING_BREAD)));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(Items.BAMBOO), RecipeCategory.FOOD, MoreFoodItems.COOKED_BAMBOO, 1.0f, 200)
+                .criterion(hasItem(Items.BAMBOO), conditionsFromItem(Items.BAMBOO))
+                .offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.COOKED_BAMBOO) + "_smelting"));
+
+        CookingRecipeJsonBuilder.createSmoking(Ingredient.ofItems(Items.BAMBOO), RecipeCategory.FOOD, MoreFoodItems.COOKED_BAMBOO, 1.0f, 100)
+                .criterion(hasItem(Items.BAMBOO), conditionsFromItem(Items.BAMBOO))
+                .offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.COOKED_BAMBOO) + "_smoking"));
+
+        CookingRecipeJsonBuilder.createCampfireCooking(Ingredient.ofItems(Items.BAMBOO), RecipeCategory.FOOD, MoreFoodItems.COOKED_BAMBOO, 1.0f, 600)
+                .criterion(hasItem(Items.BAMBOO), conditionsFromItem(Items.BAMBOO))
+                .offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.COOKED_BAMBOO) + "_campfire_cooking"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, MoreFoodItems.BAMBOO_PIECES, 4)
+                .input(Items.BAMBOO)
+                .criterion(hasItem(Items.BAMBOO), conditionsFromItem(Items.BAMBOO))
+                .offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.BAMBOO_PIECES)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, MoreFoodItems.BAMBOO_SOUP)
+                .input(Items.BOWL)
+                .input(MoreFoodItems.BAMBOO_PIECES)
+                .input(Items.BAMBOO)
+                .criterion(hasItem(Items.BOWL), conditionsFromItem(Items.BOWL))
+                .criterion(hasItem(MoreFoodItems.BAMBOO_PIECES), conditionsFromItem(MoreFoodItems.BAMBOO_PIECES))
+                .criterion(hasItem(Items.BAMBOO), conditionsFromItem(Items.BAMBOO))
+                .offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.BAMBOO_SOUP)));
 
     }
 }

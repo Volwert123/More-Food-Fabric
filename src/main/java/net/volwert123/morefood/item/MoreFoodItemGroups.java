@@ -18,18 +18,28 @@ public class MoreFoodItemGroups {
                         entries.add(MoreFoodItems.COOKED_CARROT);
                         entries.add(MoreFoodItems.CARROT_PIECES);
                         entries.add(MoreFoodItems.CARROT_SOUP);
+                        entries.add(MoreFoodItems.CARROT_BREAD);
+                        entries.add(MoreFoodItems.CARROT_PIE);
                         entries.add(MoreFoodItems.COOKED_APPLE);
                         entries.add(MoreFoodItems.APPLE_PIECES);
                         entries.add(MoreFoodItems.APPLE_SOUP);
+                        entries.add(MoreFoodItems.APPLE_BREAD);
+                        entries.add(MoreFoodItems.APPLE_PIE);
                         entries.add(MoreFoodItems.KELP_PIECES);
                         entries.add(MoreFoodItems.KELP_SOUP);
                         entries.add(MoreFoodItems.POTATO_PIECES);
                         entries.add(MoreFoodItems.POTATO_SOUP);
+                        entries.add(MoreFoodItems.POTATO_BREAD);
+                        entries.add(MoreFoodItems.COOKED_PHANTOM);
                         entries.add(MoreFoodItems.PHANTOM_PIECES);
                         entries.add(MoreFoodItems.PHANTOM_SOUP);
                         entries.add(MoreFoodItems.PUFFERFISH_PIECES);
                         entries.add(MoreFoodItems.PUFFERFISH_SOUP);
                         entries.add(MoreFoodItems.PUMPKING_SOUP);
+                        entries.add(MoreFoodItems.PUMPKING_BREAD);
+                        entries.add(MoreFoodItems.COOKED_BAMBOO);
+                        entries.add(MoreFoodItems.BAMBOO_PIECES);
+                        entries.add(MoreFoodItems.BAMBOO_SOUP);
                     })).build());
 
     public static void registerItemGroups() {
