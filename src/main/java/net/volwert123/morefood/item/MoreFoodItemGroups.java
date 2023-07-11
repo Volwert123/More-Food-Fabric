@@ -15,18 +15,32 @@ public class MoreFoodItemGroups {
                     .displayName(Text.literal("More Food"))
                     .icon(() -> new ItemStack(MoreFoodItems.COOKED_CARROT))
                     .entries(((displayContext, entries) -> {
+                        entries.add(MoreFoodItems.IRON_CARROT);
+                        entries.add(MoreFoodItems.DIAMOND_CARROT);
+                        entries.add(MoreFoodItems.EMERALD_CARROT);
                         entries.add(MoreFoodItems.COOKED_CARROT);
                         entries.add(MoreFoodItems.CARROT_PIECES);
                         entries.add(MoreFoodItems.CARROT_SOUP);
                         entries.add(MoreFoodItems.CARROT_BREAD);
                         entries.add(MoreFoodItems.CARROT_PIE);
+                        entries.add(MoreFoodItems.IRON_APPLE);
+                        entries.add(MoreFoodItems.DIAMOND_APPLE);
+                        entries.add(MoreFoodItems.EMERALD_APPLE);
                         entries.add(MoreFoodItems.COOKED_APPLE);
                         entries.add(MoreFoodItems.APPLE_PIECES);
                         entries.add(MoreFoodItems.APPLE_SOUP);
                         entries.add(MoreFoodItems.APPLE_BREAD);
                         entries.add(MoreFoodItems.APPLE_PIE);
+                        entries.add(MoreFoodItems.IRON_KELP);
+                        entries.add(MoreFoodItems.Gold_KELP);
+                        entries.add(MoreFoodItems.Diamond_KELP);
+                        entries.add(MoreFoodItems.Emerald_KELP);
                         entries.add(MoreFoodItems.KELP_PIECES);
                         entries.add(MoreFoodItems.KELP_SOUP);
+                        entries.add(MoreFoodItems.IRON_POTATO);
+                        entries.add(MoreFoodItems.GOLD_POTATO);
+                        entries.add(MoreFoodItems.DIAMOND_POTATO);
+                        entries.add(MoreFoodItems.EMERALD_POTATO);
                         entries.add(MoreFoodItems.POTATO_PIECES);
                         entries.add(MoreFoodItems.POTATO_SOUP);
                         entries.add(MoreFoodItems.POTATO_BREAD);
@@ -40,6 +54,30 @@ public class MoreFoodItemGroups {
                         entries.add(MoreFoodItems.COOKED_BAMBOO);
                         entries.add(MoreFoodItems.BAMBOO_PIECES);
                         entries.add(MoreFoodItems.BAMBOO_SOUP);
+                        entries.add(MoreFoodItems.IRON_COOKED_RABBIT);
+                        entries.add(MoreFoodItems.GOLD_COOKED_RABBIT);
+                        entries.add(MoreFoodItems.DIAMOND_COOKED_RABBIT);
+                        entries.add(MoreFoodItems.EMERALD_COOKED_RABBIT);
+                        entries.add(MoreFoodItems.IRON_MELON_SLICE);
+                        entries.add(MoreFoodItems.GOLD_MELON_SLICE);
+                        entries.add(MoreFoodItems.DIAMOND_MELON_SLICE);
+                        entries.add(MoreFoodItems.EMERALD_MELON_SLICE);
+                        entries.add(MoreFoodItems.IRON_COOKED_CHICKEN);
+                        entries.add(MoreFoodItems.GOLD_COOKED_CHICKEN);
+                        entries.add(MoreFoodItems.DIAMOND_COOKED_CHICKEN);
+                        entries.add(MoreFoodItems.EMERALD_COOKED_CHICKEN);
+                        entries.add(MoreFoodItems.IRON_COOKED_MUTTON);
+                        entries.add(MoreFoodItems.GOLD_COOKED_MUTTON);
+                        entries.add(MoreFoodItems.DIAMOND_COOKED_MUTTON);
+                        entries.add(MoreFoodItems.EMERALD_COOKED_MUTTON);
+                        entries.add(MoreFoodItems.IRON_COOKED_PORKCHOP);
+                        entries.add(MoreFoodItems.GOLD_COOKED_PORKCHOP);
+                        entries.add(MoreFoodItems.DIAMOND_COOKED_PORKCHOP);
+                        entries.add(MoreFoodItems.EMERALD_COOKED_PORKCHOP);
+                        entries.add(MoreFoodItems.IRON_COOKED_BEEF);
+                        entries.add(MoreFoodItems.GOLD_COOKED_BEEF);
+                        entries.add(MoreFoodItems.DIAMOND_COOKED_BEEF);
+                        entries.add(MoreFoodItems.EMERALD_COOKED_BEEF);
                     })).build());
 
     public static void registerItemGroups() {
