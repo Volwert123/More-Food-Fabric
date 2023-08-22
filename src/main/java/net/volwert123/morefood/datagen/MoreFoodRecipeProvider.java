@@ -104,10 +104,10 @@ public class MoreFoodRecipeProvider extends FabricRecipeProvider {
         createDiamondFoodRecipe(MoreFoodItems.DIAMOND_COOKED_PORKCHOP, Items.COOKED_PORKCHOP).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.DIAMOND_COOKED_PORKCHOP)));
         createEmeraldFoodRecipe(MoreFoodItems.EMERALD_COOKED_PORKCHOP, Items.COOKED_PORKCHOP).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.EMERALD_COOKED_PORKCHOP)));
 
-        createIronFoodRecipe(MoreFoodItems.IRON_COOKED_BEEF, Items.BEEF).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.IRON_COOKED_BEEF)));
-        createGoldenFoodRecipe(MoreFoodItems.GOLD_COOKED_BEEF, Items.BEEF).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.GOLD_COOKED_BEEF)));
-        createDiamondFoodRecipe(MoreFoodItems.DIAMOND_COOKED_BEEF, Items.BEEF).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.DIAMOND_COOKED_BEEF)));
-        createEmeraldFoodRecipe(MoreFoodItems.EMERALD_COOKED_BEEF, Items.BEEF).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.EMERALD_COOKED_BEEF)));
+        createIronFoodRecipe(MoreFoodItems.IRON_COOKED_BEEF, Items.COOKED_BEEF).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.IRON_COOKED_BEEF)));
+        createGoldenFoodRecipe(MoreFoodItems.GOLD_COOKED_BEEF, Items.COOKED_BEEF).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.GOLD_COOKED_BEEF)));
+        createDiamondFoodRecipe(MoreFoodItems.DIAMOND_COOKED_BEEF, Items.COOKED_BEEF).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.DIAMOND_COOKED_BEEF)));
+        createEmeraldFoodRecipe(MoreFoodItems.EMERALD_COOKED_BEEF, Items.COOKED_BEEF).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.EMERALD_COOKED_BEEF)));
     }
 
     private static ShapedRecipeJsonBuilder createIronFoodRecipe(ItemConvertible output, ItemConvertible input) {
