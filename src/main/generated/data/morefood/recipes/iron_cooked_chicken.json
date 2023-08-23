@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:cooked_chicken"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "III",
+    "I#I",
+    "III"
+  ],
+  "result": {
+    "item": "morefood:iron_cooked_chicken"
+  },
+  "show_notification": true
+}

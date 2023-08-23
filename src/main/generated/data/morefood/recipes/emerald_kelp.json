@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:dried_kelp"
+    },
+    "E": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "E#E",
+    "EEE"
+  ],
+  "result": {
+    "item": "morefood:emerald_kelp"
+  },
+  "show_notification": true
+}
