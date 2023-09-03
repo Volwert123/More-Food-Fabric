@@ -94,5 +94,10 @@ public class MoreFoodModelProvider extends FabricModelProvider {
         itemModelGenerator.register(MoreFoodItems.GOLD_COOKED_BEEF, Models.GENERATED);
         itemModelGenerator.register(MoreFoodItems.DIAMOND_COOKED_BEEF, Models.GENERATED);
         itemModelGenerator.register(MoreFoodItems.EMERALD_COOKED_BEEF, Models.GENERATED);
+
+        itemModelGenerator.register(MoreFoodItems.RICE_CHICKENBOWL, Models.GENERATED);
+        itemModelGenerator.register(MoreFoodItems.RICE_CODBOWL, Models.GENERATED);
+        itemModelGenerator.register(MoreFoodItems.RICE_SALMONBOWL, Models.GENERATED);
+        itemModelGenerator.register(MoreFoodItems.RICE_VEGETABLEBOWL, Models.GENERATED);
     }
 }

@@ -90,6 +90,12 @@ public class MoreFoodItemGroups {
                         entries.add(MoreFoodItems.GOLD_COOKED_BEEF);
                         entries.add(MoreFoodItems.DIAMOND_COOKED_BEEF);
                         entries.add(MoreFoodItems.EMERALD_COOKED_BEEF);
+
+                        entries.add(MoreFoodItems.RICE);
+                        entries.add(MoreFoodItems.RICE_CHICKENBOWL);
+                        entries.add(MoreFoodItems.RICE_CODBOWL);
+                        entries.add(MoreFoodItems.RICE_SALMONBOWL);
+                        entries.add(MoreFoodItems.RICE_VEGETABLEBOWL);
                     })).build());
 
     public static void registerItemGroups() {

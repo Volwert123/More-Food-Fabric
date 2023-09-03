@@ -87,6 +87,12 @@ public class MoreFoodItems {
     public static final Item DIAMOND_COOKED_BEEF = registerItem("diamond_cooked_beef", new DiamondFoodItem(new FabricItemSettings().food(registerFoodValues(8, 4f).build())));
     public static final Item EMERALD_COOKED_BEEF = registerItem("emerald_cooked_beef", new EmeraldFoodItem(new FabricItemSettings().food(registerFoodValues(8, 4f).build())));
 
+    public static final Item RICE = registerItem("rice", new AliasedBlockItem(MoreFoodBlocks.RICE_CROP, new FabricItemSettings()));
+    public static final Item RICE_CHICKENBOWL = registerItem("rice_chickenbowl", new RiceBowlItem(new FabricItemSettings().food(registerFoodValues(10, 5f).build())));
+    public static final Item RICE_CODBOWL = registerItem("rice_codbowl", new RiceBowlItem(new FabricItemSettings().food(registerFoodValues(10, 5f).build())));
+    public static final Item RICE_SALMONBOWL = registerItem("rice_salmonbowl", new RiceBowlItem(new FabricItemSettings().food(registerFoodValues(10, 5f).build())));
+    public static final Item RICE_VEGETABLEBOWL = registerItem("rice_vegetablebowl", new RiceBowlItem(new FabricItemSettings().food(registerFoodValues(9, 4.5f).build())));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(MoreFood.MOD_ID, name), item);
     }

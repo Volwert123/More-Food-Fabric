@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:cooked_chicken"
+    },
+    "B": {
+      "item": "minecraft:bowl"
+    },
+    "R": {
+      "item": "morefood:rice"
+    }
+  },
+  "pattern": [
+    "  #",
+    "RRR",
+    " B "
+  ],
+  "result": {
+    "item": "morefood:rice_chickenbowl"
+  },
+  "show_notification": true
+}
