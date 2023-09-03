@@ -1,12 +1,14 @@
 package net.volwert123.morefood.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.volwert123.morefood.MoreFood;
+import net.volwert123.morefood.block.MoreFoodBlocks;
 import net.volwert123.morefood.item.custom.*;
 
 public class MoreFoodItems {

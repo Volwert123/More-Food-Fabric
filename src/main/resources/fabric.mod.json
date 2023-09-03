@@ -20,6 +20,9 @@
 		"main": [
 			"net.volwert123.morefood.MoreFood"
 		],
+		"client": [
+			"net.volwert123.morefood.MoreFoodClient"
+		],
 		"fabric-datagen": [
 			"net.volwert123.morefood.MoreFoodDataGenerator"
 		]

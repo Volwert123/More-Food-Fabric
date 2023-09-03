@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 
 public class PufferfishSoupItem extends Item {
     public PufferfishSoupItem(Settings settings) {
-        super(settings);
+        super(settings.maxCount(1));
     }
 
     @Override

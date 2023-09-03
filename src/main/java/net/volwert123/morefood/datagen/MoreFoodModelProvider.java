@@ -5,6 +5,8 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.volwert123.morefood.block.MoreFoodBlocks;
+import net.volwert123.morefood.block.RiceCropBlock;
 import net.volwert123.morefood.item.MoreFoodItems;
 
 public class MoreFoodModelProvider extends FabricModelProvider {
@@ -14,7 +16,9 @@ public class MoreFoodModelProvider extends FabricModelProvider {
     }
 
     @Override
-    public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {}
+    public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        blockStateModelGenerator.registerCrop(MoreFoodBlocks.RICE_CROP, RiceCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
+    }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {

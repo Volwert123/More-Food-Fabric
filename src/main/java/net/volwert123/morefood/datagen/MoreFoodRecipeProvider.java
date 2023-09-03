@@ -108,6 +108,11 @@ public class MoreFoodRecipeProvider extends FabricRecipeProvider {
         createGoldenFoodRecipe(MoreFoodItems.GOLD_COOKED_BEEF, Items.COOKED_BEEF).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.GOLD_COOKED_BEEF)));
         createDiamondFoodRecipe(MoreFoodItems.DIAMOND_COOKED_BEEF, Items.COOKED_BEEF).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.DIAMOND_COOKED_BEEF)));
         createEmeraldFoodRecipe(MoreFoodItems.EMERALD_COOKED_BEEF, Items.COOKED_BEEF).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.EMERALD_COOKED_BEEF)));
+
+        createRiceBowlRecipe(MoreFoodItems.RICE_CHICKENBOWL, Items.COOKED_CHICKEN).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.RICE_CHICKENBOWL)));
+        createRiceBowlRecipe(MoreFoodItems.RICE_CODBOWL, Items.COOKED_COD).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.RICE_CODBOWL)));
+        createRiceBowlRecipe(MoreFoodItems.RICE_SALMONBOWL, Items.COOKED_SALMON).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.RICE_SALMONBOWL)));
+        createRiceVegetableBowlRecipe().offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.RICE_VEGETABLEBOWL)));
     }
 
     private static ShapedRecipeJsonBuilder createIronFoodRecipe(ItemConvertible output, ItemConvertible input) {
@@ -200,5 +205,32 @@ public class MoreFoodRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(input), conditionsFromItem(input))
                 .criterion(hasItem(Items.EGG), conditionsFromItem(Items.EGG))
                 .criterion(hasItem(Items.SUGAR), conditionsFromItem(Items.SUGAR));
+    }
+
+    private static ShapedRecipeJsonBuilder createRiceBowlRecipe(ItemConvertible output, ItemConvertible input) {
+        return ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, output)
+                .input('B', Items.BOWL)
+                .input('R', MoreFoodItems.RICE)
+                .input('#', input)
+                .pattern("  #")
+                .pattern("RRR")
+                .pattern(" B ")
+                .criterion(hasItem(Items.BOWL), conditionsFromItem(Items.BOWL))
+                .criterion(hasItem(MoreFoodItems.RICE), conditionsFromItem(MoreFoodItems.RICE))
+                .criterion(hasItem(input), conditionsFromItem(input));
+    }
+    private static ShapedRecipeJsonBuilder createRiceVegetableBowlRecipe() {
+        return ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, MoreFoodItems.RICE_VEGETABLEBOWL)
+                .input('B', Items.BOWL)
+                .input('R', MoreFoodItems.RICE)
+                .input('A', MoreFoodItems.COOKED_BAMBOO)
+                .input('C', Items.CARROT)
+                .pattern(" AC")
+                .pattern("RRR")
+                .pattern(" B ")
+                .criterion(hasItem(Items.BOWL), conditionsFromItem(Items.BOWL))
+                .criterion(hasItem(MoreFoodItems.RICE), conditionsFromItem(MoreFoodItems.RICE))
+                .criterion(hasItem(MoreFoodItems.COOKED_BAMBOO), conditionsFromItem(MoreFoodItems.COOKED_BAMBOO))
+                .criterion(hasItem(Items.CARROT), conditionsFromItem(Items.CARROT));
     }
 }

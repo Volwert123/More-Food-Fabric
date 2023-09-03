@@ -12,7 +12,7 @@ import net.minecraft.world.World;
 
 public class SoupItem extends Item {
     public SoupItem(Settings settings) {
-        super(settings);
+        super(settings.maxCount(1));
     }
 
     @Override
