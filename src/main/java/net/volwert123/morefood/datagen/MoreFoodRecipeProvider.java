@@ -113,6 +113,11 @@ public class MoreFoodRecipeProvider extends FabricRecipeProvider {
         createRiceBowlRecipe(MoreFoodItems.RICE_CODBOWL, Items.COOKED_COD).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.RICE_CODBOWL)));
         createRiceBowlRecipe(MoreFoodItems.RICE_SALMONBOWL, Items.COOKED_SALMON).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.RICE_SALMONBOWL)));
         createRiceVegetableBowlRecipe().offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.RICE_VEGETABLEBOWL)));
+
+        createSushiRecipe(MoreFoodItems.SUSHI_BAMBOO, Items.BAMBOO).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.SUSHI_BAMBOO)));
+        createSushiRecipe(MoreFoodItems.SUSHI_BEETROOT, Items.BEETROOT).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.SUSHI_BEETROOT)));
+        createSushiRecipe(MoreFoodItems.SUSHI_CARROT, Items.CARROT).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.SUSHI_CARROT)));
+        createSushiRecipe(MoreFoodItems.SUSHI_SALMON, Items.SALMON).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.SUSHI_SALMON)));
     }
 
     private static ShapedRecipeJsonBuilder createIronFoodRecipe(ItemConvertible output, ItemConvertible input) {
@@ -232,5 +237,17 @@ public class MoreFoodRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(MoreFoodItems.RICE), conditionsFromItem(MoreFoodItems.RICE))
                 .criterion(hasItem(MoreFoodItems.COOKED_BAMBOO), conditionsFromItem(MoreFoodItems.COOKED_BAMBOO))
                 .criterion(hasItem(Items.CARROT), conditionsFromItem(Items.CARROT));
+    }
+    private static ShapedRecipeJsonBuilder createSushiRecipe(ItemConvertible output, ItemConvertible input) {
+        return ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, output)
+                .input('K', Items.KELP)
+                .input('R', MoreFoodItems.RICE)
+                .input('#', input)
+                .pattern("   ")
+                .pattern("R#R")
+                .pattern("KKK")
+                .criterion(hasItem(Items.KELP), conditionsFromItem(Items.KELP))
+                .criterion(hasItem(MoreFoodItems.RICE), conditionsFromItem(MoreFoodItems.RICE))
+                .criterion(hasItem(input), conditionsFromItem(input));
     }
 }

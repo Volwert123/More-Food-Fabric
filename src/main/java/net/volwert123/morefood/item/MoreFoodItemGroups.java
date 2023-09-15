@@ -96,6 +96,11 @@ public class MoreFoodItemGroups {
                         entries.add(MoreFoodItems.RICE_CODBOWL);
                         entries.add(MoreFoodItems.RICE_SALMONBOWL);
                         entries.add(MoreFoodItems.RICE_VEGETABLEBOWL);
+
+                        entries.add(MoreFoodItems.SUSHI_BAMBOO);
+                        entries.add(MoreFoodItems.SUSHI_BEETROOT);
+                        entries.add(MoreFoodItems.SUSHI_CARROT);
+                        entries.add(MoreFoodItems.SUSHI_SALMON);
                     })).build());
 
     public static void registerItemGroups() {

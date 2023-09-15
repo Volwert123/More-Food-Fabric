@@ -95,6 +95,13 @@ public class MoreFoodItems {
     public static final Item RICE_SALMONBOWL = registerItem("rice_salmonbowl", new RiceBowlItem(new FabricItemSettings().food(registerFoodValues(10, 5f).build())));
     public static final Item RICE_VEGETABLEBOWL = registerItem("rice_vegetablebowl", new RiceBowlItem(new FabricItemSettings().food(registerFoodValues(9, 4.5f).build())));
 
+
+    public static final Item SUSHI_BAMBOO = registerItem("sushi_bamboo", new Item(new FabricItemSettings().food(registerFoodValues(5, 2.5f).build())));
+    public static final Item SUSHI_BEETROOT = registerItem("sushi_beetroot", new Item(new FabricItemSettings().food(registerFoodValues(5, 2.5f).build())));
+    public static final Item SUSHI_CARROT = registerItem("sushi_carrot", new Item(new FabricItemSettings().food(registerFoodValues(5, 2.5f).build())));
+    public static final Item SUSHI_SALMON = registerItem("sushi_salmon", new Item(new FabricItemSettings().food(registerFoodValues(5, 2.5f).build())));
+
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(MoreFood.MOD_ID, name), item);
     }

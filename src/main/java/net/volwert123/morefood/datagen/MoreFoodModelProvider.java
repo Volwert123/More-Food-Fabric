@@ -103,5 +103,10 @@ public class MoreFoodModelProvider extends FabricModelProvider {
         itemModelGenerator.register(MoreFoodItems.RICE_CODBOWL, Models.GENERATED);
         itemModelGenerator.register(MoreFoodItems.RICE_SALMONBOWL, Models.GENERATED);
         itemModelGenerator.register(MoreFoodItems.RICE_VEGETABLEBOWL, Models.GENERATED);
+
+        itemModelGenerator.register(MoreFoodItems.SUSHI_BAMBOO, Models.GENERATED);
+        itemModelGenerator.register(MoreFoodItems.SUSHI_BEETROOT, Models.GENERATED);
+        itemModelGenerator.register(MoreFoodItems.SUSHI_CARROT, Models.GENERATED);
+        itemModelGenerator.register(MoreFoodItems.SUSHI_SALMON, Models.GENERATED);
     }
 }
