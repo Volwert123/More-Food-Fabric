@@ -14,12 +14,9 @@ import net.minecraft.util.Identifier;
 import net.volwert123.morefood.MoreFood;
 import net.volwert123.morefood.item.MoreFoodItems;
 
-import java.util.function.Consumer;
-
 public class MoreFoodRecipeProvider extends FabricRecipeProvider {
-
-    public MoreFoodRecipeProvider(FabricDataOutput output) {
-        super(output);
+    public MoreFoodRecipeProvider(FabricDataOutput generator) {
+        super(generator);
     }
 
     @Override
