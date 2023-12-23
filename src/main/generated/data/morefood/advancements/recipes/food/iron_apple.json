@@ -34,15 +34,14 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_iron_ingot",
-      "has_apple",
-      "has_the_recipe"
+      "has_apple"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:iron_apple"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

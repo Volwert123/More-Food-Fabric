@@ -46,16 +46,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_bowl",
       "has_rice",
-      "has_cooked_chicken",
-      "has_the_recipe"
+      "has_cooked_chicken"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:rice_chickenbowl"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -46,16 +46,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_bowl",
       "has_carrot",
-      "has_carrot_pieces",
-      "has_the_recipe"
+      "has_carrot_pieces"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:carrot_soup"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

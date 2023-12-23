@@ -46,16 +46,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_apple",
       "has_egg",
-      "has_sugar",
-      "has_the_recipe"
+      "has_sugar"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:apple_pie"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

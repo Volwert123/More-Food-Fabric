@@ -34,15 +34,14 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_diamond",
-      "has_cooked_beef",
-      "has_the_recipe"
+      "has_cooked_beef"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:diamond_cooked_beef"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

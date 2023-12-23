@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_pufferfish",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_pufferfish"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:pufferfish_pieces"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

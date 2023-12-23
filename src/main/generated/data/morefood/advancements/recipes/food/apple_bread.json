@@ -46,16 +46,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_wheat",
       "has_apple",
-      "has_apple_pieces",
-      "has_the_recipe"
+      "has_apple_pieces"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:apple_bread"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

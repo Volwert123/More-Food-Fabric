@@ -34,15 +34,14 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_gold_ingot",
-      "has_melon_slice",
-      "has_the_recipe"
+      "has_melon_slice"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:gold_melon_slice"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -46,16 +46,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_bowl",
       "has_phantom_membrane",
-      "has_phantom_pieces",
-      "has_the_recipe"
+      "has_phantom_pieces"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:phantom_soup"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

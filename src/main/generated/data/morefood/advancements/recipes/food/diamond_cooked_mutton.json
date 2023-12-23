@@ -34,15 +34,14 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_diamond",
-      "has_cooked_mutton",
-      "has_the_recipe"
+      "has_cooked_mutton"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:diamond_cooked_mutton"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

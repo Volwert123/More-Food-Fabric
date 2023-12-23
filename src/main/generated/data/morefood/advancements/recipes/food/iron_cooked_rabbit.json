@@ -34,15 +34,14 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_iron_ingot",
-      "has_cooked_rabbit",
-      "has_the_recipe"
+      "has_cooked_rabbit"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:iron_cooked_rabbit"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

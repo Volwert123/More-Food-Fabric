@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_phantom_membrane",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_phantom_membrane"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:phantom_pieces"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

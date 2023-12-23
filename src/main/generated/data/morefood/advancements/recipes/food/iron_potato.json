@@ -34,15 +34,14 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_iron_ingot",
-      "has_potato",
-      "has_the_recipe"
+      "has_potato"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:iron_potato"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -34,15 +34,14 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_emerald",
-      "has_cooked_beef",
-      "has_the_recipe"
+      "has_cooked_beef"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:emerald_cooked_beef"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

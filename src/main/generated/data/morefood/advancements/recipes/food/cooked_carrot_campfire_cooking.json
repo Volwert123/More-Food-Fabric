@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_carrot",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_carrot"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:cooked_carrot_campfire_cooking"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

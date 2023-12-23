@@ -34,15 +34,14 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_emerald",
-      "has_potato",
-      "has_the_recipe"
+      "has_potato"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:emerald_potato"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

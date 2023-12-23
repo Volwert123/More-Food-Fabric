@@ -46,16 +46,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_bowl",
       "has_bamboo",
-      "has_bamboo_pieces",
-      "has_the_recipe"
+      "has_bamboo_pieces"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:bamboo_soup"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

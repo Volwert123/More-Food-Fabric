@@ -58,17 +58,16 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_bowl",
       "has_rice",
       "has_cooked_bamboo",
-      "has_carrot",
-      "has_the_recipe"
+      "has_carrot"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:rice_vegetablebowl"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

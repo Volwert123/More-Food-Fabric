@@ -46,16 +46,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_kelp",
       "has_rice",
-      "has_beetroot",
-      "has_the_recipe"
+      "has_beetroot"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:sushi_beetroot"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

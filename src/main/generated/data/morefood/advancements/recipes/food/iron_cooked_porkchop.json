@@ -34,15 +34,14 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_iron_ingot",
-      "has_cooked_porkchop",
-      "has_the_recipe"
+      "has_cooked_porkchop"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:iron_cooked_porkchop"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

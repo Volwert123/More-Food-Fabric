@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_kelp",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_kelp"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:kelp_pieces"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -34,15 +34,14 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_emerald",
-      "has_apple",
-      "has_the_recipe"
+      "has_apple"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:emerald_apple"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

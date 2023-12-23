@@ -34,15 +34,14 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_diamond",
-      "has_cooked_chicken",
-      "has_the_recipe"
+      "has_cooked_chicken"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:diamond_cooked_chicken"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

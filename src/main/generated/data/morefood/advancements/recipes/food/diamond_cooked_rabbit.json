@@ -34,15 +34,14 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_diamond",
-      "has_cooked_rabbit",
-      "has_the_recipe"
+      "has_cooked_rabbit"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:diamond_cooked_rabbit"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

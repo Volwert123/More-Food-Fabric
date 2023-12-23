@@ -46,16 +46,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_bowl",
       "has_rice",
-      "has_cooked_cod",
-      "has_the_recipe"
+      "has_cooked_cod"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:rice_codbowl"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

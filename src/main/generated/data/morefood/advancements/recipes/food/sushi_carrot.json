@@ -46,16 +46,15 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_kelp",
       "has_rice",
-      "has_carrot",
-      "has_the_recipe"
+      "has_carrot"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:sushi_carrot"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

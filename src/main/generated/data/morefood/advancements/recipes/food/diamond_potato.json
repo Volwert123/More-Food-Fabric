@@ -34,15 +34,14 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_diamond",
-      "has_potato",
-      "has_the_recipe"
+      "has_potato"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:diamond_potato"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

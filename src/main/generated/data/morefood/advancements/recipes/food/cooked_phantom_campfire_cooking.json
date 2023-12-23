@@ -22,14 +22,13 @@
   },
   "requirements": [
     [
-      "has_phantom_membrane",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_phantom_membrane"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:cooked_phantom_campfire_cooking"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

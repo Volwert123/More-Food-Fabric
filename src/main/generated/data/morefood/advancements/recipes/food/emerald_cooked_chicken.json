@@ -34,15 +34,14 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_emerald",
-      "has_cooked_chicken",
-      "has_the_recipe"
+      "has_cooked_chicken"
     ]
   ],
   "rewards": {
     "recipes": [
       "morefood:emerald_cooked_chicken"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }
