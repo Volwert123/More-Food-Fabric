@@ -24,11 +24,11 @@
 			"net.volwert123.morefood.MoreFoodClient"
 		],
 		"fabric-datagen": [
-			"net.volwert123.morefood.MoreFoodDataGenerator"
+			"net.volwert123.morefood.datagen.MoreFoodDataGenerator"
 		]
 	},
 	"depends": {
-		"fabricloader": ">=0.15.3",
+		"fabricloader": ">=0.15.6",
 		"minecraft": "~1.20.4",
 		"java": ">=17",
 		"fabric-api": "*"
