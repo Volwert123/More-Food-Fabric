@@ -66,5 +66,13 @@
   "item.morefood.rice_chickenbowl": "Rice Chicken Bowl",
   "item.morefood.rice_codbowl": "Rice Cod Bowl",
   "item.morefood.rice_salmonbowl": "Rice Salmon Bowl",
-  "item.morefood.rice_vegetablebowl": "Rice Vegetable Bowl"
+  "item.morefood.rice_vegetablebowl": "Rice Vegetable Bowl",
+  "item.morefood.rice_pudding": "Rice Pudding",
+  "item.morefood.rice_pudding_with_honey": "Rice Pudding With Honey",
+  "item.morefood.raw_bacon": "Raw Bacon",
+  "item.morefood.cooked_bacon": "Cooked Bacon",
+  "item.morefood.cooked_egg": "Fried Egg",
+  "item.morefood.cooked_egg_with_bacon": "Fried Egg With Bacon",
+  "item.morefood.chocolate": "Chocolate",
+  "item.morefood.chocolate_bar": "Chocolate Bar"
 }

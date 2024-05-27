@@ -94,13 +94,22 @@ public class MoreFoodItems {
     public static final Item RICE_CODBOWL = registerItem("rice_codbowl", new RiceBowlItem(new FabricItemSettings().food(registerFoodValues(10, 5f).build())));
     public static final Item RICE_SALMONBOWL = registerItem("rice_salmonbowl", new RiceBowlItem(new FabricItemSettings().food(registerFoodValues(10, 5f).build())));
     public static final Item RICE_VEGETABLEBOWL = registerItem("rice_vegetablebowl", new RiceBowlItem(new FabricItemSettings().food(registerFoodValues(9, 4.5f).build())));
-
+    public static final Item RICE_PUDDING = registerItem("rice_pudding", new RiceBowlItem(new FabricItemSettings().food(registerFoodValues(9, 4.5f).build())));
+    public static final Item RICE_PUDDING_WITH_HONEY = registerItem("rice_pudding_with_honey", new RiceBowlItem(new FabricItemSettings().food(registerFoodValues(10, 5f).build())));
 
     public static final Item SUSHI_BAMBOO = registerItem("sushi_bamboo", new Item(new FabricItemSettings().food(registerFoodValues(5, 2.5f).build())));
     public static final Item SUSHI_BEETROOT = registerItem("sushi_beetroot", new Item(new FabricItemSettings().food(registerFoodValues(5, 2.5f).build())));
     public static final Item SUSHI_CARROT = registerItem("sushi_carrot", new Item(new FabricItemSettings().food(registerFoodValues(5, 2.5f).build())));
     public static final Item SUSHI_SALMON = registerItem("sushi_salmon", new Item(new FabricItemSettings().food(registerFoodValues(5, 2.5f).build())));
 
+    public static final Item RAW_BACON = registerItem("raw_bacon", new Item(new FabricItemSettings().food(registerFoodValues(2,1f).build())));
+    public static final Item COOKED_BACON = registerItem("cooked_bacon", new Item(new FabricItemSettings().food(registerFoodValues(5,2.5f).build())));
+
+    public static final Item COOKED_EGG = registerItem("cooked_egg", new Item(new FabricItemSettings().food(registerFoodValues(3, 1.5f).build())));
+    public static final Item COOKED_EGG_WITH_BACON = registerItem("cooked_egg_with_bacon", new Item(new FabricItemSettings().food(registerFoodValues(7, 3.5f).build())));
+
+    public static final Item CHOCOLATE = registerItem("chocolate", new Item(new FabricItemSettings().food(registerFoodValues(6,3f).build())));
+    public static final Item CHOCOLATE_BAR = registerItem("chocolate_bar", new Item(new FabricItemSettings().food(registerFoodValues(8,4f).build())));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(MoreFood.MOD_ID, name), item);

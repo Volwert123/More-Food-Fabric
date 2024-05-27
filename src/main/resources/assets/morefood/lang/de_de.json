@@ -66,5 +66,14 @@
   "item.morefood.rice_chickenbowl": "Hühnchen Reis Schale",
   "item.morefood.rice_codbowl": "Kabeljau Reis Schale",
   "item.morefood.rice_salmonbowl": "Lachs Reis Schale",
-  "item.morefood.rice_vegetablebowl": "Gemüse Reis Schale"
+  "item.morefood.rice_vegetablebowl": "Gemüse Reis Schale",
+  "item.morefood.rice_pudding": "Reis Pudding",
+  "item.morefood.rice_pudding_with_honey": "Reis Pudding mit Honig",
+  "item.morefood.raw_bacon": "Roher Bacon",
+  "item.morefood.cooked_bacon": "Gebratener Bacon",
+  "item.morefood.cooked_egg": "Spiegelei",
+  "item.morefood.cooked_egg_with_bacon": "Spiegelei mit Bacon",
+  "item.morefood.chocolate": "Schokolade",
+  "item.morefood.chocolate_bar": "Schokoriegel"
+
 }

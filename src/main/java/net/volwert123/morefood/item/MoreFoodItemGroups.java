@@ -96,11 +96,23 @@ public class MoreFoodItemGroups {
                         entries.add(MoreFoodItems.RICE_CODBOWL);
                         entries.add(MoreFoodItems.RICE_SALMONBOWL);
                         entries.add(MoreFoodItems.RICE_VEGETABLEBOWL);
+                        entries.add(MoreFoodItems.RICE_PUDDING);
+                        entries.add(MoreFoodItems.RICE_PUDDING_WITH_HONEY);
 
                         entries.add(MoreFoodItems.SUSHI_BAMBOO);
                         entries.add(MoreFoodItems.SUSHI_BEETROOT);
                         entries.add(MoreFoodItems.SUSHI_CARROT);
                         entries.add(MoreFoodItems.SUSHI_SALMON);
+
+                        entries.add(MoreFoodItems.RAW_BACON);
+                        entries.add(MoreFoodItems.COOKED_BACON);
+
+                        entries.add(MoreFoodItems.COOKED_EGG);
+                        entries.add(MoreFoodItems.COOKED_EGG_WITH_BACON);
+
+                        entries.add(MoreFoodItems.CHOCOLATE);
+                        entries.add(MoreFoodItems.CHOCOLATE_BAR);
+
                     })).build());
 
     public static void registerItemGroups() {

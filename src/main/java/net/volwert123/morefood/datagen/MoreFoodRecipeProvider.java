@@ -110,11 +110,24 @@ public class MoreFoodRecipeProvider extends FabricRecipeProvider {
         createRiceBowlRecipe(MoreFoodItems.RICE_CODBOWL, Items.COOKED_COD).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.RICE_CODBOWL)));
         createRiceBowlRecipe(MoreFoodItems.RICE_SALMONBOWL, Items.COOKED_SALMON).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.RICE_SALMONBOWL)));
         createRiceVegetableBowlRecipe().offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.RICE_VEGETABLEBOWL)));
+        createRiceBowlRecipe(MoreFoodItems.RICE_PUDDING, Items.MILK_BUCKET).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.RICE_PUDDING)));
+        createRicePuddingWithHoneyRecipe().offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.RICE_PUDDING_WITH_HONEY)));
 
         createSushiRecipe(MoreFoodItems.SUSHI_BAMBOO, Items.BAMBOO).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.SUSHI_BAMBOO)));
         createSushiRecipe(MoreFoodItems.SUSHI_BEETROOT, Items.BEETROOT).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.SUSHI_BEETROOT)));
         createSushiRecipe(MoreFoodItems.SUSHI_CARROT, Items.CARROT).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.SUSHI_CARROT)));
         createSushiRecipe(MoreFoodItems.SUSHI_SALMON, Items.SALMON).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.SUSHI_SALMON)));
+
+        createRawBaconRecipe().offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.RAW_BACON)));
+        createSmeltingRecipe(MoreFoodItems.COOKED_BACON, MoreFoodItems.RAW_BACON).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.COOKED_BACON) + "_smelting"));
+        createSmokingRecipe(MoreFoodItems.COOKED_BACON, MoreFoodItems.RAW_BACON).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.COOKED_BACON) + "_smoking"));
+
+        createSmeltingRecipe(MoreFoodItems.COOKED_EGG, Items.EGG).offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.COOKED_EGG) + "_smelting"));
+        createCookedEggWithBaconRecipe().offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.COOKED_EGG_WITH_BACON)));
+
+        createChocolateRecipe().offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.CHOCOLATE)));
+        createChocolateBarRecipe().offerTo(exporter, new Identifier(MoreFood.MOD_ID, getRecipeName(MoreFoodItems.CHOCOLATE_BAR)));
+
     }
 
     private static ShapedRecipeJsonBuilder createIronFoodRecipe(ItemConvertible output, ItemConvertible input) {
@@ -235,6 +248,16 @@ public class MoreFoodRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(MoreFoodItems.COOKED_BAMBOO), conditionsFromItem(MoreFoodItems.COOKED_BAMBOO))
                 .criterion(hasItem(Items.CARROT), conditionsFromItem(Items.CARROT));
     }
+    private static ShapedRecipeJsonBuilder createRicePuddingWithHoneyRecipe() {
+        return ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, MoreFoodItems.RICE_PUDDING_WITH_HONEY)
+                .input('R', MoreFoodItems.RICE_PUDDING)
+                .input('H', Items.HONEY_BOTTLE)
+                .pattern("   ")
+                .pattern(" H ")
+                .pattern(" R ")
+                .criterion(hasItem(MoreFoodItems.RICE_PUDDING_WITH_HONEY), conditionsFromItem(MoreFoodItems.RICE_PUDDING_WITH_HONEY))
+                .criterion(hasItem(Items.HONEY_BOTTLE), conditionsFromItem(Items.HONEY_BOTTLE));
+    }
     private static ShapedRecipeJsonBuilder createSushiRecipe(ItemConvertible output, ItemConvertible input) {
         return ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, output)
                 .input('K', Items.KELP)
@@ -246,5 +269,44 @@ public class MoreFoodRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.KELP), conditionsFromItem(Items.KELP))
                 .criterion(hasItem(MoreFoodItems.RICE), conditionsFromItem(MoreFoodItems.RICE))
                 .criterion(hasItem(input), conditionsFromItem(input));
+    }
+    private static ShapedRecipeJsonBuilder createCookedEggWithBaconRecipe() {
+        return ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, MoreFoodItems.COOKED_EGG_WITH_BACON)
+                .input('B', MoreFoodItems.COOKED_BACON)
+                .input('E', MoreFoodItems.COOKED_EGG)
+                .pattern("   ")
+                .pattern(" B ")
+                .pattern(" E ")
+                .criterion(hasItem(MoreFoodItems.COOKED_BACON), conditionsFromItem(MoreFoodItems.COOKED_BACON))
+                .criterion(hasItem(MoreFoodItems.COOKED_EGG), conditionsFromItem(MoreFoodItems.COOKED_EGG));
+
+    }
+    private static ShapedRecipeJsonBuilder createRawBaconRecipe() {
+        return ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, MoreFoodItems.RAW_BACON)
+                .input('P', Items.PORKCHOP)
+                .pattern("   ")
+                .pattern(" P ")
+                .pattern("   ")
+                .criterion(hasItem(Items.PORKCHOP), conditionsFromItem(Items.PORKCHOP));
+    }
+    private static ShapedRecipeJsonBuilder createChocolateRecipe() {
+        return ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, MoreFoodItems.CHOCOLATE)
+                .input('M', Items.MILK_BUCKET)
+                .input('C', Items.COCOA_BEANS)
+                .pattern("   ")
+                .pattern(" M ")
+                .pattern(" C ")
+                .criterion(hasItem(Items.MILK_BUCKET), conditionsFromItem(Items.MILK_BUCKET))
+                .criterion(hasItem(Items.COCOA_BEANS), conditionsFromItem(Items.COCOA_BEANS));
+    }
+    private static ShapedRecipeJsonBuilder createChocolateBarRecipe() {
+        return ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, MoreFoodItems.CHOCOLATE_BAR)
+                .input('C', MoreFoodItems.CHOCOLATE)
+                .input('P', Items.PAPER)
+                .pattern("   ")
+                .pattern(" P ")
+                .pattern(" C ")
+                .criterion(hasItem(MoreFoodItems.CHOCOLATE), conditionsFromItem(MoreFoodItems.CHOCOLATE))
+                .criterion(hasItem(Items.PAPER), conditionsFromItem(Items.PAPER));
     }
 }

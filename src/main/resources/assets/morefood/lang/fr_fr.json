@@ -66,5 +66,13 @@
   "item.morefood.rice_chickenbowl": "Bol de poulet au riz",
   "item.morefood.rice_codbowl": "Bol de morue au riz",
   "item.morefood.rice_salmonbowl": "Bol de saumon au riz",
-  "item.morefood.rice_vegetablebowl": "Bol de légumes au riz"
+  "item.morefood.rice_vegetablebowl": "Bol de légumes au riz",
+  "item.morefood.rice_pudding": "Riz au lait",
+  "item.morefood.rice_pudding_with_honey": "Riz au lait au miel",
+  "item.morefood.raw_bacon": "Bacon cru",
+  "item.morefood.cooked_bacon": "Bacon cuit",
+  "item.morefood.cooked_egg": "Œuf au plat",
+  "item.morefood.cooked_egg_with_bacon": "Œuf au plat avec bacon",
+  "item.morefood.chocolate": "Chocolat",
+  "item.morefood.chocolate_bar": "Barre chocolatée"
 }

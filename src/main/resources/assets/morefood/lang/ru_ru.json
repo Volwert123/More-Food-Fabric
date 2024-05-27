@@ -66,5 +66,13 @@
   "item.morefood.rice_chickenbowl": "Миска с курицей и рисом",
   "item.morefood.rice_codbowl": "Миска с рисовой треской",
   "item.morefood.rice_salmonbowl": "Рисовая миска с лососем",
-  "item.morefood.rice_vegetablebowl": "Овощная миска с рисом"
+  "item.morefood.rice_vegetablebowl": "Овощная миска с рисом",
+  "item.morefood.rice_pudding": "Рисовый пудинг",
+  "item.morefood.rice_pudding_with_honey": "Рисовый пудинг с медом",
+  "item.morefood.raw_bacon": "Сырой бекон",
+  "item.morefood.cooked_bacon": "Приготовленный бекон",
+  "item.morefood.cooked_egg": "Жареное яйцо",
+  "item.morefood.cooked_egg_with_bacon": "Жареное яйцо с беконом",
+  "item.morefood.chocolate": "Шоколад",
+  "item.morefood.chocolate_bar": "Шоколадная плитка"
 }
